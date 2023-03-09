@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&T Products</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-left"><a href="../index.html" id="MnT">M&T</a></li>
+                <li class="nav-left"><a href="products.html">Buy</a></li>
+                <li class="nav-left"><a href="location.html">Store</a></li>
+                <li class="nav-left"><a href="about.html">About Us</a></li>
+                <li><a href="subscribe.html"><button>Subscribe</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div id="home-title">
+            <h1>M&T</h1>
+            <h6>With Great Clothes Comes Great Styles</h6>
+            <hr>
+        </div>
+    </section>
+
+
+
+    <section class="products">
+        <div class="menu">
+            <span id="top-menu" onclick="showTop()">Tops</span>
+            <span id="bot-menu" onclick="showBot()">Bottoms</span>
+        </div>
+        <div class="top-clothes" id="top">
+            <div class="top1" onclick="topDesc(0)">
+                <div class="prod-img">
+                    <img src="../img/white-t-shirt.png" alt="White T-Shirt">
+                </div>
+                <div class="prod-desc">
+                    <p>White T-Shirt</p>
+                    <p>Rp. 100.000,00</p>
+                </div>
+            </div>
+            <div class="top2" onclick="topDesc(1)">
+                <div class="prod-img">
+                    <img src="../img/blue-shirt.png" alt="Blue Shirt">
+                </div>
+                <div class="prod-desc">
+                    <p>Blue Shirt</p>
+                    <p>Rp. 310.000,00</p>
+                </div>
+            </div>
+            <div class="top3" onclick="topDesc(2)">
+                <div class="prod-img">
+                    <img src="../img/black-leather-jacket.png" alt="Black Leather Jacket">
+                </div>
+                <div class="prod-desc">
+                    <p>Black Leather Jacket</p>
+                    <p>Rp. 500.000,00</p>
+                </div>
+            </div>
+            <div class="top4" onclick="topDesc(3)">
+                <div class="prod-img">
+                    <img src="../img/white-collared-t-shirt.png" alt="White Collared T-Shirt">
+                </div>
+                <div class="prod-desc">
+                    <p>White Collared T-Shirt</p>
+                    <p>Rp. 120.000,00</p>
+                </div>
+            </div>
+            <div class="top5" onclick="topDesc(4)">
+                <div class="prod-img">
+                    <img src="../img/red-flannel-shirt.png" alt="Red & Black Flannel Shirt">
+                </div>
+                <div class="prod-desc">
+                    <p>Red & Black Flannel Shirt</p>
+                    <p>Rp. 350.000,00</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom-clothes" id="bot">
+            <div class="bot1" onclick="botDesc(0)">
+                <div class="prod-img">
+                    <img src="../img/blue-jeans.png" alt="Blue Jeans">
+                </div>
+                <div class="prod-desc">
+                    <p>Blue Jeans</p>
+                    <p>Rp. 250.000,00</p>
+                </div>
+            </div>
+            <div class="bot2" onclick="botDesc(1)">
+                <div class="prod-img">
+                    <img src="../img/beige-shorts.png" alt="Beige Shorts">
+                </div>
+                <div class="prod-desc">
+                    <p>Beige Shorts</p>
+                    <p>Rp. 180.000,00</p>
+                </div>
+            </div>
+            <div class="bot3" onclick="botDesc(2)">
+                <div class="prod-img">
+                    <img src="../img/gray-sweatpants.png" alt="Gray Sweatpants">
+                </div>
+                <div class="prod-desc">
+                    <p>Gray Sweatpants</p>
+                    <p>Rp. 220.000,00</p>
+                </div>
+            </div>
+            <div class="bot4" onclick="botDesc(3)">
+                <div class="prod-img">
+                    <img src="../img/blue-ripped-jeans.png" alt="BLue Ripped Jeans">
+                </div>
+                <div class="prod-desc">
+                    <p>Blue Ripped Jeans</p>
+                    <p>Rp. 255.000,00</p>
+                </div>
+            </div>
+            <div class="bot5" onclick="botDesc(4)">
+                <div class="prod-img">
+                    <img src="../img/white-pants.png" alt="White Pants">
+                </div>
+                <div class="prod-desc">
+                    <p>White Jeans</p>
+                    <p>Rp. 235.000,00</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal">
+            <div id="modal-content">
+                <div id="close" onclick="handleClose()">x</div>
+                <div id="image"></div>
+                <p id="product"></p>
+                <p id="price"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <div class="footer-address">
+            <h3>Address</h3>
+            <br>
+            <p>Jl. Lingkar Luar 77</p>
+            <p>Jakarta Pusat, DKI Jakarta</p>
+            <p>Indonesia</p>
+            <p>11730</p>
+            <p>(021) 5595 1055</p>
+        </div>
+        <a href="https://twitter.com/i/flow/login"><img src="../img/twitter-sign.png" alt="Twitter"></a>
+        <a
+            href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F%3Fhl%3Did%26__coig_login%3D1"><img
+                src="../img/instagram-sign.png" alt="Instagram"></a>
+    </footer>
+
+
+</body>
+<script src="../js/script.js"></script>
+
+</html>
